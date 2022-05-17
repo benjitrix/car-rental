@@ -1,0 +1,33 @@
+.logout-user {
+  padding-top: var(--padding-from-navbar);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-user h2 {
+  margin-bottom: 0.5rem;
+}
+
+.logout-user-container {
+  border: 1.5px solid #000;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logout-user-container p {
+  margin-bottom: 0.5rem;
+}
+
+.logout-btn {
+  width: 8rem;
+  height: 1.5rem;
+  background-color: var(--negative-color);
+  border: 1.5px solid #000;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}

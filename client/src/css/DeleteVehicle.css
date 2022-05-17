@@ -1,0 +1,32 @@
+.delete-vehicle {
+  padding-top: var(--padding-from-navbar);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete-vehicle h2 {
+  margin-bottom: 0.5rem;
+}
+
+.delete-vehicle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1.5px solid #000;
+  border-radius: 0.5rem;
+}
+
+.delete-vehicle-input {
+  display: block;
+  width: 16.5rem;
+  height: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0.2rem;
+}
+
+.delete-vehicle-btn {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}

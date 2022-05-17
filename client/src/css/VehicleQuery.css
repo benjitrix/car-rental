@@ -1,0 +1,25 @@
+.vehicle-query {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 4.5rem; 
+}
+
+.vehicle-query-container {
+  display: flex;
+  flex-direction: column;
+  width: var(--min-width-800px);
+}
+
+@media screen and (min-width: 996px) {
+  .vehicle-query {
+    /* grid-template-rows: 0.3fr 4fr; */
+  }
+
+  .vehicle-query-container {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+    gap: 1.0rem;
+  }
+}

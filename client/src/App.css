@@ -1,0 +1,16 @@
+:root {
+  --min-width-800px: 92%;
+  --padding-from-navbar: 6rem;
+  --padding-from-navbar-small: 4.3rem;
+  --base-color: dodgerblue;
+  --base-color-light: rgb(159, 202, 245);
+  --base-color-medium: rgb(95, 161, 228);
+  --negative-color: rgb(250, 96, 96);
+  --positive-color: rgb(159, 226, 159);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

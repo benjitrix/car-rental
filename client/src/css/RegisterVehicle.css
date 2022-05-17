@@ -1,0 +1,30 @@
+.register-vehicle {
+  padding-top: var(--padding-from-navbar);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-vehicle h2 {
+  margin-bottom: 0.5rem;
+}
+
+.register-vehicle-container {
+  border: 1.5px solid #000;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.register-vehicle-input {
+  display: block;
+  width: 16.5rem;
+  height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.register-vehicle-btn {
+  margin-top: 0.8rem;
+  font-weight: 600;
+}

@@ -1,0 +1,31 @@
+.update-vehicle {
+  padding-top: var(--padding-from-navbar);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.update-vehicle h2 {
+  margin-bottom: 0.5rem;
+}
+
+.update-vehicle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1.5px solid #000;
+  border-radius: 0.5rem;
+}
+
+.update-vehicle-input {
+  display: block;
+  width: 16.8rem;
+  height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.update-vehicle-btn {
+  margin-top: 0.8rem;
+  font-weight: 600;
+}

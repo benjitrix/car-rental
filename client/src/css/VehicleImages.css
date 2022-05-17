@@ -1,0 +1,231 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(21, 91%, 17%);
+  --clr-primary-2: hsl(21, 84%, 25%);
+  --clr-primary-3: hsl(21, 81%, 29%);
+  --clr-primary-4: hsl(21, 77%, 34%);
+  --clr-primary-5: hsl(21, 62%, 45%);
+  --clr-primary-6: hsl(21, 57%, 50%);
+  --clr-primary-7: hsl(21, 65%, 59%);
+  --clr-primary-8: hsl(21, 80%, 74%);
+  --clr-primary-9: hsl(21, 94%, 87%);
+  --clr-primary-10: hsl(21, 100%, 94%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+/* experiment on image gallery*/
+.estate-images {
+  width: 87vw;
+  margin: 0rem auto;
+  max-width: var(--max-width);
+  
+}
+
+.image-on-display {
+  width: 87vw;
+  height: 300px;
+  max-width: 87vw;
+  text-align: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 0.15rem;
+}
+
+.displayed-photo {
+  border-radius: 0;
+  margin-bottom: 1rem;
+  width: 87vw;
+  height: 300px;
+  border: 4px solid var(--base-color);
+}
+
+@media screen and (min-width: 996px) {
+  .estate-images {
+    width: 24vw;
+  }
+
+  .image-on-display {
+    width: 24vw;
+    max-width: 24vw;
+  }
+
+  .displayed-photo {
+    width: 400px;
+  }
+}
+
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+article.lastSlide {
+  transform: translateX(-100%);
+}
+
+article.nextSlide {
+  transform: translateX(100%);
+}
+
+/* direction arrows */
+.prev,
+.next {
+  position: absolute;
+  top: 150px;
+  background: var(--clr-grey-5);
+  color: var(--clr-white);
+  width: 1.25rem;
+  height: 1.25rem;
+  display: grid;
+  visibility: hidden;
+  place-items: center;
+  border-color: transparent;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.prev {
+  left: 4px;
+}
+
+.next {
+  right: 4px;
+}
+
+.image-on-display:hover .prev {
+  visibility: visible;
+  transform: translateX(15px);
+  /* background: var(--clr-primary-5); */
+}
+
+.image-on-display:hover .next {
+  visibility: visible;
+  transform: translateX(-10px);
+  /* background: var(--clr-primary-5); */
+}
+
+/* media min-width: 800px */
+@media (min-width: 800px) {
+  .prev,
+  .next {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* image gallery */
+.gallery-container {
+  width: 87vw;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #000;
+  position: relative;
+}
+
+.image-gallery {
+  width: 87vw;
+  height: 80px;
+  display: flex;
+  overflow: hidden;
+  background: var(--base-color);
+  padding: 0 0.5rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .gallery-container {
+    width: 24vw;
+}
+
+.image-gallery {
+    width: 24vw;
+  }
+}
+
+
+.image-gallery .estate-photo {
+  width: 120px;
+  height: 80px;
+  padding: 0.4rem 0.25rem;
+}
+
+.angle-two {
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 30px;
+  color: #000;
+  padding: 0.25rem;
+  background: #fff;
+  border-radius: 0.3rem;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.angle-two:hover {
+  color: #fff;
+  background: #000;
+  opacity: 0.5;
+}
+
+.angle-two-left {
+  left: -2px
+}
+
+.angle-two-right {
+  right: -2px;
+}
+
+.image-gallery:hover .angle-two-left {
+  visibility: visible;
+  transform: translateX(10px);
+}
+
+.image-gallery:hover .angle-two-right {
+  visibility: visible;
+  transform: translateX(-10px);
+}

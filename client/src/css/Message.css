@@ -1,0 +1,14 @@
+.message {
+  padding: 0.15rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.error-true {
+  background-color: var(--negative-color)
+}
+
+.error-false {
+  background-color: var(--positive-color);
+}

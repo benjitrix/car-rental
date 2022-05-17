@@ -1,0 +1,12 @@
+.vehicles-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 996px) {
+  .vehicles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

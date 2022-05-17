@@ -1,0 +1,12 @@
+.about-page {
+  padding-top: var(--padding-from-navbar);
+}
+
+.about-page-container {
+  padding: 1.0rem;
+}
+
+.about-page-container p {
+  text-align: justify;
+  margin-bottom: 0.5rem;
+}

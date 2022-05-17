@@ -1,0 +1,10 @@
+.pre-checkout-btn button{
+  width: 30vw;
+  height: 2.0rem;
+  margin-bottom: 1.0rem;
+  background: var(--base-color);
+  border: none;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  font-weight: 600;
+}

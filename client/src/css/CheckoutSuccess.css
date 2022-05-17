@@ -1,0 +1,10 @@
+.checkout-success {
+  padding-top: var(--padding-from-navbar);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkout-success h4 {
+  text-transform: capitalize;
+}

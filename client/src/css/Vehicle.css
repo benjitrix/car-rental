@@ -1,0 +1,142 @@
+.vehicle {
+  margin-bottom: 1.5rem;
+}
+
+.vehicle-container {
+  width: 87vw;
+  position: relative;
+}
+
+@media screen and (min-width: 996px) {
+  .vehicle-container {
+    width: 24vw;
+  }
+}
+
+.details-add-to-cart {
+  margin-top: 0.2rem;
+  border: 4px solid var(--base-color);
+  padding: 0.2rem 0.35rem 0rem 0.35rem;
+}
+
+.vehicle-details {
+  display: grid;
+  grid-template-areas: 
+    "b b t t"
+    "m m y y"
+    "c c p p";
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.vehicle-details p:nth-child(1) {
+  grid-area: t;
+}
+
+.vehicle-details p:nth-child(2) {
+  grid-area: b;
+}
+
+.vehicle-details p:nth-child(3) {
+  grid-area: m;
+}
+
+.vehicle-details p:nth-child(4) {
+  grid-area: y;
+}
+
+.vehicle-details p:nth-child(5) {
+  grid-area: c;
+}
+
+.vehicle-details p:nth-child(6) {
+  grid-area: p;
+}
+
+.vehicle-details p span:nth-child(1) {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.horizontal-line {
+  color: var(--base-color-light);
+}
+
+.add-to-cart {
+  margin-top: 0.4rem;
+}
+
+.reservation-date {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.reservation-date label {
+  font-weight: 700;
+}
+
+.reservation-date input {
+  margin-right: 2.0rem;
+}
+
+.qty-add-to-cart {
+  margin-top: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-vehicle-number {
+  width: 4rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.add-vehicle-to-cart-btn {
+  width: 6rem;
+  height: 1.5rem;
+  font-weight: 600;
+}
+
+.vehicle-cart-link {
+  color: var(--base-color-medium);
+  font-size: 1.5rem;
+}
+
+/* dropdown menu */
+.dropdown-menu-bars {
+  position: absolute;
+  top: 0.4rem;
+  right: 1.0rem;
+  font-size: 1.2rem;
+  display: none;
+}
+
+.vehicle-container:hover .dropdown-menu-bars {
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 1.8rem;
+  right: 2rem;
+  opacity: 0;
+  transition: 0s 2s;
+  background-color: #fff;
+}
+
+.open-menu {
+  opacity: 1;
+  transition: 0s;
+}
+
+.dropdown-link {
+  font-weight: 600;
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.dropdown-link:hover {
+  background: rgb(214, 214, 214);
+}

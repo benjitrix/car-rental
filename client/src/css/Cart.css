@@ -1,0 +1,154 @@
+.cart {
+  padding-top: var(--padding-from-navbar);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.reservations {
+  margin: 0 auto;
+}
+
+.reservations-996px {
+  display: none;
+}
+
+.cart-vehicle-photo {
+  display: block;
+  width: 5rem;
+}
+
+table, th, tr {
+  border: 4px solid #fff;
+  border-collapse: collapse;
+  border-spacing: 4px;
+  background: rgb(175, 218, 245);
+}
+
+th {
+  background: lightskyblue;
+}
+
+tr {
+  cursor: pointer;
+}
+
+tr:nth-child(odd) {
+  background: #eee;
+}
+
+td {
+  width: 3.8rem;
+  text-align: center;
+  padding: 0.2rem
+}
+
+td:nth-child(4) {
+  width: 4.2rem;
+}
+
+td:nth-child(5) {
+  width: 4.2rem;
+}
+
+td:nth-child(6) {
+  width: 3.2rem;
+}
+
+td:nth-child(7) {
+  width: 4.5rem;
+}
+
+.table-total td:nth-child(1) {
+  text-align: left;
+  font-weight: 600;
+  padding-left: 0.4rem;
+}
+
+.table-total td:nth-child(2) {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.table-highlight {
+  background-color: lightsteelblue;
+  font-weight: 600;
+}
+
+/* inputs */
+.cart-date-input {
+  width: 6.5rem;
+}
+
+.cart-quantity-input {
+  width: 2.5rem;
+}
+
+.stripe-payment h2 {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.stripe-checkout {
+  text-align: center;
+}
+
+
+/* @media 996px */
+@media screen and (min-width: 996px) {
+  .cart {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .cart-container {
+    flex-direction: row ;
+    justify-content: space-around;
+  }
+
+  .reservations {
+    display: none;
+  }
+
+  .reservations-996px {
+    display: block;
+  }
+
+  tr {
+  cursor: default;
+}
+
+  td {
+    width: 7rem;
+    text-align: center;
+  }
+
+  td:nth-child(1) {
+    text-align: right;
+  }
+
+  td:nth-child(6) {
+    width: 4.5rem;
+  }
+
+  td:nth-child(7) {
+    width: 4.5rem;
+  }
+}
+
+.cart-remove-btn {
+  border: none;
+  background: none;
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.stripe-payment h2, .reservations-996px h2 {
+  margin-bottom: 0.5rem;
+}

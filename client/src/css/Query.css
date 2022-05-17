@@ -1,0 +1,12 @@
+.query {
+  background-color: var(--base-color-medium);
+  min-height: 10vh;
+  margin-bottom: 1.0rem;
+}
+
+@media screen and (min-width: 996px) {
+  .query {
+    min-width: 16vw;
+    margin-bottom: 0;
+  }
+}
